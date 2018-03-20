@@ -21,10 +21,12 @@ describe('Feathers application tests', () => {
     this.server.close(done);
   });
 
-  it('starts and shows the index page', () => {
-    return rp(getUrl()).then(body =>
-      assert.ok(body.indexOf('<html>') !== -1)
-    );
+  it('starts', () => {
+    return rp({
+      url: getUrl(''),
+    }).catch(res => {
+      assert.equal(res.statusCode, 200);
+    });
   });
 
   describe('404', function() {
