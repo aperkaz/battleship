@@ -25,6 +25,7 @@
     "test": "npm run eslint && npm run mocha",
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
+    "start:production": "cd frontend && npm run build && cd .. && node src/",
     "mocha": "mocha test/ --recursive --exit"
   },
   "dependencies": {

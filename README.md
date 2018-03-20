@@ -17,11 +17,26 @@ Getting up and running is as easy as 1, 2, 3.
     cd path/to/battleship; npm install
     ```
 
-3. Start your app
+## Scripts
 
-    ```
-    npm start
-    ```
+Execute tests
+
+```
+npm run test
+
+```
+
+Start your app
+
+```
+npm start
+```
+    
+Build the front-end for production and start server
+    
+```
+npm run start:production
+```
 
 ## Scaffolding
 
@@ -40,14 +55,3 @@ $ feathers help                           # Show all commands
 
 For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
 
-## Changelog
-
-__0.1.0__
-
-- Initial release
-
-## License
-
-Copyright (c) 2016
-
-Licensed under the [MIT license](LICENSE).
